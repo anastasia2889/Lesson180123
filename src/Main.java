@@ -49,8 +49,10 @@ public class Main {
         System.out.println(" Задача 3 ");
         int[] arr = generateRandomArray();
         double average = 0;
+        double sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            average += arr[i] / arr.length;
+            sum += arr[i];
+            average = sum / arr.length;
             System.out.println(" Средняя сумма трат в месяц составила " + average + " рублей");
         }
     }
@@ -58,10 +60,10 @@ public class Main {
     public static void task4() {
         System.out.println(" Задача 4 ");
         int[] arr = generateRandomArray();
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i= reverseFullName.length-1; i >=0; i--){
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.println(reverseFullName[i]);
+        }
     }
-}
 }
 
